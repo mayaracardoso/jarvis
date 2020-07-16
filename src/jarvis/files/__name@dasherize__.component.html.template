@@ -1,0 +1,5 @@
+<header></header>
+<section>
+  <button class="buy" (click)="saveAndRedirect('', '', '')">Comprar</button>
+</section>
+<footer></footer>

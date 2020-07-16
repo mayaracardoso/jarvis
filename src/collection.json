@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "jarvis": {
+      "description": "A blank schematic.",
+      "factory": "./jarvis/index#jarvis",
+      "schema": "./jarvis/schema.json"
+    }
+  }
+}

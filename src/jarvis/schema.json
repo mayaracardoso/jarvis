@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "jarvis",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome do componente customizado",
+      "minLength": 3,
+      "alias": "n",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "Qual o nome do componente que você deseja criar?"
+    },
+    "path": {
+      "description": "Caminho em que será criado o componente",
+      "type": "string",
+      "format": "path"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
